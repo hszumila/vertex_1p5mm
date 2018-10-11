@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside]{article}
+
+%\usepackage{lipsum} % Package to generate dummy text throughout this template
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage{amsmath}
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\restylefloat{figure}
+\usepackage{graphicx}
+\usepackage{float}
+
+%\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+%\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+%\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+%\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+%\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+%\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Heavy Photon Search Collaboration $\bullet$ \today} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{20pt}{10pt}\selectfont\textbf{Vertex analysis of the 2015 Engineering Run with the SVT at 1.5~mm}} % Article title
+
+
+\author{
+  Alyssa Petroski\\
+  \texttt{University of the Sciences, Philadelphia, PA}
+  \and
+ Holly  Szumila-Vance\\
+  \texttt{Thomas Jefferson National Laboratory, Newport News, VA}
+}
+
+
+
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+
+The Heavy Photon Search experiment Engineering Run took data during the spring of 2015 at Jefferson lab with a 1.056~GeV electron beam at 50~nA incident on a 4~$\mu$m thick tungsten target. This note describes the analysis developed for searching for heavy photons with a detached vertex with the SVT at the nominal position (layer 1 at $\pm$0.5~mm above and below the beam) and requires tracks to have hits in the first layer of the tracker. All cuts and studies were done on 100$\%$ of the data so as to study backgrounds on the full data set. The purpose of this note is to establish the procedure and cuts, establish limits, and lay the framework for future vertex searches.  
+
+\end{abstract}
+\newpage
+\tableofcontents
+\newpage
+ \listoffigures
+ \newpage
+\listoftables
+\newpage
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introduction to the Vertex Search}
+%\begin{figure}[htb]
+  %\centering
+    %  \includegraphics[width=0.9\textwidth]{plots/reach_upgrade.png}
+ % \caption[Upgraded Reach]{Projected reach at 4 weeks of continuous beam for future running with both Layer 0 tracking upgrade and positron trigger upgrade. These upgrades recover our projected reach from the HPS proposal.}
+  %\label{fig:reach}
+%\end{figure}  
+
+\subsection{Datasets}
+\subsection{General event selection}
+
+\section{Displaced Heavy Photon signal}
+
+\section{Event selection}
+\subsection{Comparison with data at the nominal SVT setting}
+
+\section{Setting limits on displaced $A^{\prime}$s}
+
+\section{Systematics}
+
+\section{Conclusion}
+A search for heavy photons with displaced vertices in the mass range between 20--70~MeV that decay to $e^+e^-$ pairs was performed using the 2015 HPS engineering run. This analysis focused on events with tracks in the first layer of the SVT while the SVT was at the position of $\pm$1.5~mm above and below the beam line. 
+
+\
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem[P. Billoir, 1992]{ref:billoir_fast_1992}
+P. Billoir and S. Qian (1992).
+\newblock Fast Vertex Fitting with a Local Parametrization of Tracks
+\newblock \href{https://www.sciencedirect.com/science/article/pii/0168900292908593}{NIM Volume 311; Issues 1-2}
+
+\bibitem[S. Yellin, 2002]{ref:yellin_finding_2002}
+S. Yellin (2002).
+\newblock Finding an Upper Limit in the Presence of Unknown Background.
+\newblock \href{https://arxiv.org/abs/physics/0203002}{arXiv:physics/0203002}
+
+\bibitem[S. Yellin, 2011]{ref:yellin_optimum_2011}
+S. Yellin (2011).
+\newblock Some Ways of Combining Optimum Interval Upper Limits.
+\newblock \href{https://arxiv.org/abs/1105.2928}{arXiv:1105.2928}
+
+\bibitem[O. Moreno, 2017]{ref:bumphunt_note}
+O. Moreno, N. Baltzell, M. Graham, and J. Jaros (2017).
+\newblock Search for a Heavy Photon in Electro-Produced $e^+e^-$ Pairs with the HPS Experiment at JLab.
+\newblock \href{https://confluence.slac.stanford.edu/display/hpsg/Analyses?preview=/211791152/228951493/engrun2015_resonance_search.pdf}{Analysis Note}
+
+\bibitem[S. Uemera, 2016]{ref:sho_thesis}
+S. Uemera (2016).
+\newblock Searching for Heavy Photons in the HPS Experiment.
+\newblock \href{http://www.slac.stanford.edu/~meeg/thesis/thesis.pdf}{PhD Thesis}
+
+\bibitem[H. Szumila-Vance, 2017]{ref:holly_thesis}
+H. Szumila-Vance (2017).
+\newblock Search for Heavy Photons with Detached Vertices in the Heavy Photon Search Experiment.
+\newblock \href{https://userweb.jlab.org/~hszumila/thesis_24JUL.pdf}{PhD Thesis}
+
+\bibitem[H. Szumila-Vance, 2015]{ref:holly_timing}
+H.Szumila-Vance (2015).
+\newblock HPS Ecal Timing Calibration for the Spring 2015 Engineering Run.
+\newblock \href{https://misportal.jlab.org/mis/physics/hps_notes/viewFile.cfm/2015-011.pdf?documentId=13}{HPS Note}
+
+\bibitem[Heavy Photon Search Collaboration]{ref:hps_collab}
+HPS Collab.
+\newblock HPS Collaboration Confluence Site.
+\newblock \href{https://confluence.slac.stanford.edu/display/hpsg/Heavy+Photon+Search+Experiment}{HPS Site}
+
+\bibitem[Jefferson Lab]{ref:jlab_site}
+Jefferson Lab.
+\newblock Jefferson Lab Site.
+\newblock \href{https://www.jlab.org}{Jefferson Lab Site}
+
+%\bibitem[Figueredo and Wolf, 2009]{Figueredo:2009dg}
+%Figueredo, A.~J. and Wolf, P. S.~A. (2009).
+%\newblock Assortative pairing and life history strategy - a cross-cultural
+%  study.
+%\newblock {\em Human Nature}, 20:317--330.
+ 
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
